@@ -17,6 +17,7 @@
 		6109A07F2BB7A96600BDFD9C /* PokedexModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6109A07E2BB7A96600BDFD9C /* PokedexModel.swift */; };
 		6109A0822BB7AACC00BDFD9C /* PokemonDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6109A0812BB7AACC00BDFD9C /* PokemonDetail.swift */; };
 		6109A0842BB7ACEF00BDFD9C /* PokedexViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6109A0832BB7ACEF00BDFD9C /* PokedexViewModel.swift */; };
+		6109A08E2BB8D74E00BDFD9C /* ImageCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6109A08D2BB8D74E00BDFD9C /* ImageCardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +51,7 @@
 		6109A07E2BB7A96600BDFD9C /* PokedexModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexModel.swift; sourceTree = "<group>"; };
 		6109A0812BB7AACC00BDFD9C /* PokemonDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetail.swift; sourceTree = "<group>"; };
 		6109A0832BB7ACEF00BDFD9C /* PokedexViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokedexViewModel.swift; sourceTree = "<group>"; };
+		6109A08D2BB8D74E00BDFD9C /* ImageCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageCardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 			children = (
 				6109A0552BB7A8C000BDFD9C /* Pokedex.swift */,
 				6109A0812BB7AACC00BDFD9C /* PokemonDetail.swift */,
+				6109A08D2BB8D74E00BDFD9C /* ImageCardView.swift */,
 				6109A0802BB7A97000BDFD9C /* Models */,
 			);
 			path = Views;
@@ -282,6 +285,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6109A08E2BB8D74E00BDFD9C /* ImageCardView.swift in Sources */,
 				6109A0562BB7A8C000BDFD9C /* Pokedex.swift in Sources */,
 				6109A07F2BB7A96600BDFD9C /* PokedexModel.swift in Sources */,
 				6109A0822BB7AACC00BDFD9C /* PokemonDetail.swift in Sources */,

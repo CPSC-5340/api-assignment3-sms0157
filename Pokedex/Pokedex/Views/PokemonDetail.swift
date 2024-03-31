@@ -8,18 +8,16 @@
 import SwiftUI
 
 struct PokemonDetail: View {
+    
+    var pokemon : Pokemon
+     
     var body: some View {
         VStack {
-            Text("Pokemon Name")
-                .font(.system(size: 20))
-            Text("Pokemon ID")
-            Text("Height")
-            Text("Weight")
-        
+            ImageCardView(pokemon: pokemon)
+            Text(pokemon.name.capitalized)
+                .font(.largeTitle)
+            
         }
     }
 }
 
-#Preview {
-    PokemonDetail()
-}

@@ -16,19 +16,21 @@ struct Pokedex: View {
             List {
                 ForEach(pokemonvm.pokemonData) { pokemon in
                     NavigationLink {
-                        PokemonDetail()
+                        PokemonDetail(pokemon : pokemon)
                     } label: {
-                        Text(pokemon.name)
+                        Text(pokemon.name.capitalized)
                     }
                     
                 }
-                .onAppear {
-                    pokemonvm.fetchData()
-                }
                 .listStyle(.grouped)
                 .navigationTitle("Pokedex")
+                }
             }
+        
+        .onAppear {
+            pokemonvm.fetchData()
         }
+        
     }
 }
 
