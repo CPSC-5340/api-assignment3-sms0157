@@ -42,5 +42,22 @@ class PokedexViewModel : ObservableObject {
     
     func fetchDataDetails(pokemon: Pokemon) {
         let id = getPokemonIndex(pokemon: pokemon)
-    }
-}
+        guard let url = URL(string: "https://pokeapi.co/api/v2/pokemon\(pokemon.id ?? 0)/") else {
+            return
+        }
+        let urlresults = URLSession.shared.dataTask(with: url) { data, _, error in
+            guard let data = data, error == nil else {
+                return
+            }
+            do {
+                let detailresults = try JSONDecoder().decode(PokemonDetails.self, from: data)
+                DispatchQueue.main.async {
+                                }
+                            }
+                            catch {
+                                print(error)
+                            }
+                        }
+                        urlresults.resume()
+                    }
+                }
