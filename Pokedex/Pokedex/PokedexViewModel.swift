@@ -32,4 +32,15 @@ class PokedexViewModel : ObservableObject {
                 }.resume()
         }
     }
+    
+    func getPokemonIndex(pokemon: Pokemon) -> Int {
+        if let index = self.pokemonData.firstIndex(of: pokemon) {
+            return index + 1
+        }
+        return 0
+    }
+    
+    func fetchDataDetails(pokemon: Pokemon) {
+        let id = getPokemonIndex(pokemon: pokemon)
+    }
 }

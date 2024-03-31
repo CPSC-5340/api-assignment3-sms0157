@@ -9,6 +9,8 @@ import SwiftUI
 
 struct PokemonDetail: View {
     
+    @ObservedObject var pokemonvm = PokedexViewModel()
+    
     var pokemon : Pokemon
      
     var body: some View {
@@ -17,6 +19,10 @@ struct PokemonDetail: View {
             Text(pokemon.name.capitalized)
                 .font(.largeTitle)
             
+            
+        }
+        .onAppear {
+            pokemonvm.fetchDataDetails(pokemon:pokemon)
         }
     }
 }
