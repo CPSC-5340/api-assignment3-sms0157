@@ -25,15 +25,6 @@ struct Pokemon : Codable, Identifiable {
         return URL(string: "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/\(id ?? 0).png")
         
     }
-    
-    struct PokemonDetails : Codable {
-        let id : Int
-        let weight : Int
-        let height : Int
-        let base_experience : Int
-        let order : Int
-        
-    }
-    
+
     
 }
