@@ -24,8 +24,8 @@ struct Pokedex: View {
                 }
                 .listStyle(.grouped)
                 .navigationTitle("Pokedex")
-                }
             }
+        }
         
         .onAppear {
             pokemonvm.fetchData()
@@ -33,8 +33,8 @@ struct Pokedex: View {
         
     }
 }
+    
+    #Preview {
+        Pokedex()
+    }
 
-
-#Preview {
-    Pokedex()
-}
